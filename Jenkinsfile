@@ -12,13 +12,13 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building...'
+                echo 'Building with EH edit...'
                 sh 'npm install'
             }
         }
         stage('Test') {
             steps {
-                echo 'Testing...'
+                echo 'Testing  with EH edit ...'
                 sh 'npm test'
             }
         }
